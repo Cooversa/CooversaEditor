@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ProseMirror {
+    height: calc(100vh - 6rem);
+    overflow-y: scroll;
+    background-color: #fff;
+}

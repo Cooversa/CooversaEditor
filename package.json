@@ -11,11 +11,13 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"test:unit": "vitest",
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
-		"format": "prettier --plugin-search-dir . --write ."
+		"format": "prettier --plugin-search-dir . --write .",
+		"deploy": "node gh-pages.js"
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.28.1",
 		"@sveltejs/adapter-auto": "^1.0.0",
+		"@sveltejs/adapter-static": "^1.0.0",
 		"@sveltejs/kit": "^1.0.0",
 		"@tailwindcss/typography": "^0.5.8",
 		"@typescript-eslint/eslint-plugin": "^5.45.0",
@@ -41,6 +43,7 @@
 		"@tiptap/extension-bubble-menu": "^2.0.0-beta.209",
 		"@tiptap/extension-floating-menu": "^2.0.0-beta.209",
 		"@tiptap/extension-image": "^2.0.0-beta.209",
-		"@tiptap/starter-kit": "^2.0.0-beta.209"
+		"@tiptap/starter-kit": "^2.0.0-beta.209",
+		"gh-pages": "^4.0.0"
 	}
 }
